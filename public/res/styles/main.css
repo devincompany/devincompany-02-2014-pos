@@ -203,6 +203,24 @@ header .infos {
   font-size: 20px;
 }
 
+#fotos ul {
+  display: block;
+}
+#fotos ul li {
+  float: left;
+  display: block;
+  width: 25%;
+  height: 167px;
+  overflow: hidden;
+}
+#fotos ul img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  top: -25%;
+}
+
 @-webkit-keyframes bgCover {
   0% {
     -moz-transform: translate3d(0, 0, 0);
@@ -284,6 +302,13 @@ header .infos {
     width: 160px;
     font-size: 70px;
   }
+
+  #fotos ul li {
+    width: 50%;
+  }
+  #fotos ul img {
+    top: -70%;
+  }
 }
 @media screen and (max-width: 800px) {
   .countdown .time-bind {
@@ -311,30 +336,17 @@ header .infos {
   .countdown {
     display: none;
   }
+
+  #fotos ul li {
+    width: 100%;
+    height: auto;
+  }
 }
 @media screen and (max-width: 640px) {
   .logo-header {
     width: 280px;
   }
 }
-#fotos ul {
-  display: block;
-}
-#fotos ul li {
-  float: left;
-  display: block;
-  width: 25%;
-  height: 167px;
-  overflow: hidden;
-}
-#fotos ul img {
-  width: 100%;
-  height: auto;
-  display: block;
-  position: relative;
-  top: -25%;
-}
-
 main {
   background-color: #EFF0F2;
   text-align: center;
