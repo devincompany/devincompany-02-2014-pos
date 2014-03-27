@@ -5,23 +5,18 @@ header{
     .fotos{
         position: relative;
         z-index: 5;
-        background-image: url("../../res/images/cover.jpg");
-        background-size: 1800px 500px;
-        background-position: 0 0;
-        background-repeat: repeat-x;
-        width: 9000px;
+        width: 21000px;
         height: 500px;
         opacity: 0.12;
 
         @include translate3d(0,0,0);
         @include  transition(transform 300ms linear);
 
-        -webkit-animation: bgCover 1000s linear infinite;
-        -moz-animation: bgCover 1000s linear infinite;
-        -o-animation: bgCover 1000s linear infinite;
-        -ms-animation: bgCover 1000s linear infinite;
-        animation: bgCover 1000s linear infinite;
-
+        -webkit-animation: bgCover 600s linear infinite;
+        -moz-animation: bgCover 600s linear infinite;
+        -o-animation: bgCover 600s linear infinite;
+        -ms-animation: bgCover 600s linear infinite;
+        animation: bgCover 600s linear infinite;
     }
     .infos{
         top: 0;
@@ -87,7 +82,7 @@ header{
         @include translate3d(0,0,0);
     }
     50% {
-        @include translate3d(-4500px,0,0);
+        @include translate3d(-10500px,0,0);
     }
     100% {
         @include translate3d(0,0,0);
@@ -127,4 +122,24 @@ header{
     .logo-header{
         width: 280px;
     }
+}
+
+#fotos{
+        ul{
+            display: block;
+            li{
+                float: left;
+                display: block;
+                width: 25%;
+                height: 167px;
+                overflow: hidden;
+            }
+            img{
+                width: 100%;
+                height: auto;
+                display: block;
+                position: relative;
+                top: -25%;
+            }
+        }
 }
